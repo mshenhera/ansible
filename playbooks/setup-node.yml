@@ -1,0 +1,4 @@
+- name: Mount NFS share
+  hosts: localhost
+  roles:
+    - mount-nfs
