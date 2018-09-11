@@ -1,11 +1,11 @@
 # vim:ft=ansible:
 ---
 
-- name: Installing amazon-efs-utils
+- name: Installing nfs-utils
   yum:
     name: "{{item}}"
   with_items:
-    - amazon-efs-utils
+    - nfs-utils
 
 - name: Create folder to mount nfs share to
   file:
